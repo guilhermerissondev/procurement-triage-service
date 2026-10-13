@@ -294,7 +294,7 @@ dourado mais adiante.
 ### 14. O primeiro run de CI real falhou — pytest nunca tinha ido para o requirements.txt
 
 - **Como apareceu:** publiquei o repositório no GitHub (privado,
-  `guilhermehrsilva/procurement-triage-service`) e o primeiro push para
+  `guilhermerissondev/procurement-triage-service`) e o primeiro push para
   `main` disparou o workflow do GitHub Actions pela primeira vez. Falhou
   em 18 segundos: `No module named pytest`.
 - **Impacto:** os 61 testes rodavam perfeitamente no ambiente local o
@@ -304,9 +304,9 @@ dourado mais adiante.
   porque rodei CI de verdade, contra uma máquina que eu não tinha
   preparado à mão — o tipo exato de coisa que CI existe para pegar.
 - **Solução:** adicionado `pytest>=8.0` ao `requirements.txt`, via PR real
-  ([#1](https://github.com/guilhermehrsilva/procurement-triage-service/pull/1)),
+  ([#1](https://github.com/guilhermerissondev/procurement-triage-service/pull/1)),
   não push direto — a evidência do CI vermelho (run
-  [33323380111](https://github.com/guilhermehrsilva/procurement-triage-service/actions/runs/33323380111))
+  [33323380111](https://github.com/guilhermerissondev/procurement-triage-service/actions/runs/33323380111))
   está linkada na descrição do PR.
 - **Status:** ✅ resolvido, com PR de correção real no histórico.
 
@@ -318,7 +318,7 @@ dourado mais adiante.
 - **O que fiz:** em vez de inventar uma regressão artificial qualquer,
   reintroduzi de propósito o bug real do achado #5 (parser de hora antes
   da data) — revertendo `_com_hora_proxima` para a versão antiga — num PR
-  dedicado ([#2](https://github.com/guilhermehrsilva/procurement-triage-service/pull/2)).
+  dedicado ([#2](https://github.com/guilhermerissondev/procurement-triage-service/pull/2)).
   O teste `test_parse_dates_hora_antes_da_data` (que existe desde a
   correção original do achado #5) pegou a regressão e o CI ficou vermelho
   de verdade. Um commit seguinte, na mesma branch/PR, reverteu a

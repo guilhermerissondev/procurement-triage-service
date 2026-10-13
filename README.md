@@ -7,7 +7,7 @@ habilitação, valor estimado — com citação verificável, recusa-se a respon
 quando não tem base, e ordena a fila de leitura pelo valor esperado sob a
 capacidade real de um time.
 
-Repositório: https://github.com/guilhermehrsilva/procurement-triage-service
+Repositório: https://github.com/guilhermerissondev/procurement-triage-service
 
 Problemas reais encontrados construindo isto, e como cada um foi resolvido
 (ou por que ficou em aberto): [`DIARIO-DE-BORDO.md`](DIARIO-DE-BORDO.md).
@@ -39,10 +39,10 @@ Problemas reais encontrados construindo isto, e como cada um foi resolvido
   **Ciclo vermelho→verde demonstrado de verdade**, não simulado: o
   primeiro push para o GitHub já pegou um bug real (pytest faltando no
   `requirements.txt`, corrigido via
-  [PR #1](https://github.com/guilhermehrsilva/procurement-triage-service/pull/1));
+  [PR #1](https://github.com/guilhermerissondev/procurement-triage-service/pull/1));
   depois, uma regressão deliberada do achado #5 (parser de hora) foi
   reintroduzida, pegou CI vermelho, e corrigida no commit seguinte em
-  [PR #2](https://github.com/guilhermehrsilva/procurement-triage-service/pull/2).
+  [PR #2](https://github.com/guilhermerissondev/procurement-triage-service/pull/2).
 
 ## Fonte de dados
 
